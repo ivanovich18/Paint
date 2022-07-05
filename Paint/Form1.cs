@@ -147,6 +147,14 @@ namespace Paint
             }
         }
 
+        private void pic_color_Click(object sender, EventArgs e)
+        {
+            cd.ShowDialog();
+            new_color = cd.Color;
+            pic_color.BackColor = cd.Color;
+            p.Color = cd.Color;
+        }
+
         private void pic_MouseUp(object sender, MouseEventArgs e)
         {
             paint = false;

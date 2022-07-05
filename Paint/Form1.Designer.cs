@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pnlTop = new System.Windows.Forms.Panel();
             this.pic_color = new System.Windows.Forms.Button();
             this.pnlBottom = new System.Windows.Forms.Panel();
@@ -66,6 +67,7 @@
             this.pic_color.Size = new System.Drawing.Size(39, 25);
             this.pic_color.TabIndex = 0;
             this.pic_color.UseVisualStyleBackColor = false;
+            this.pic_color.Click += new System.EventHandler(this.pic_color_Click);
             // 
             // pnlBottom
             // 
@@ -284,6 +286,7 @@
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.pnlTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Simple Paint Application by Ivan Suralta BSCpE 1-G";
